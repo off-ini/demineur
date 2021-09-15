@@ -131,13 +131,15 @@ def gameover(surfs):
             el.opened = 1
 
 def win(surfs, nombre_mines):
-    mines = 0
+    closed = 0
     w = False
     for col in surfs:
         for el in col:
-            if el.status == 10 and el.opened == 1:
-                mines = mines + 1
-    if mines == nombre_mines:
+            if el.opened == 0:
+                closed = closed + 1
+        if closed > nombre_mines:
+            break
+    if closed == nombre_mines:
         w = True
 
     return w
