@@ -18,7 +18,6 @@ class Surf(object):
         self.status = status
     
     def draw(self, screen):
-        BLACK, WHITE = (0,0,0), (255,255,255)
         img_f = Image("assets/f.png", self.body[2], self.body[3])
         img_d = Image("assets/d.png", self.body[2], self.body[3])
         img_b = Image("assets/b.png", self.body[2], self.body[3])

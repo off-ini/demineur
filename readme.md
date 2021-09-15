@@ -1,6 +1,11 @@
-# How to use
-`pip install -r requirements.txt`
-`python main.py`
+# About
+Le jeu du demineur avec pygame
+
+# How to install
+
+- `pip install -r requirements.txt`
+- `python main.py`
+
 # Game play
 
 - **Left Click** open any case
