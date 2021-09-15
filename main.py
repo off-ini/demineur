@@ -154,6 +154,9 @@ def game_play(surfs, element, x, y):
         stop = True
     else: see(surfs, x, y)
 
+    if win(surfs, nombre_mines) == True:
+        stop = True
+
     return stop
 
 sufs = []
