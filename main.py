@@ -185,9 +185,10 @@ while(running):
 
         if playing == False: 
             if e.type == pygame.KEYDOWN or win(sufs, nombre_mines):
-                sufs = make_grille_with_mines(nombre, w, h)
-                sufs = make_grille_with_number(sufs)
-                playing = True
+                if e.key == pygame.K_SPACE:
+                    sufs = make_grille_with_mines(nombre, w, h)
+                    sufs = make_grille_with_number(sufs)
+                    playing = True
     
     screen_mode.blit(background, (0,0))
     for l in sufs:
